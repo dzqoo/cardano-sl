@@ -7510,7 +7510,7 @@ inherit (pkgs) mesa;};
              async base binary bytestring cardano-sl-util containers hspec
              hspec-core lens log-warper mtl network-transport
              network-transport-inmemory network-transport-tcp QuickCheck random
-             safe-exceptions serokell-util stm time-units
+             safe-exceptions serokell-util statistics stm time-units
            ];
            benchmarkHaskellDepends = [
              async base mwc-random network-transport network-transport-tcp
@@ -44520,4 +44520,3 @@ in compiler.override {
   configurationCommon = { ... }: self: super: {};
   compilerConfig = self: super: {};
 }
-
