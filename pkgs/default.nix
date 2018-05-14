@@ -7516,6 +7516,10 @@ inherit (pkgs) mesa;};
              async base mwc-random network-transport network-transport-tcp
              statistics stm time time-units vector
            ];
+           benchmarkHaskellDepends = [
+             async base mwc-random network-transport network-transport-tcp
+             statistics stm time time-units vector
+           ];
            doHaddock = false;
            license = stdenv.lib.licenses.mit;
          }) {};
