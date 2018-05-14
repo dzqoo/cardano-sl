@@ -7878,13 +7878,6 @@ inherit (pkgs) mesa;};
              servant servant-client servant-client-core text time tls universum
              vector yaml
            ];
-           benchmarkHaskellDepends = [
-             aeson async base bytestring cardano-sl-client cardano-sl-core
-             cardano-sl-wallet cassava connection cryptonite data-default gauge
-             http-client http-client-tls optparse-applicative random semigroups
-             servant servant-client servant-client-core text time tls universum
-             vector yaml
-           ];
            doHaddock = false;
            homepage = "https://github.com/input-output-hk/cardano-sl/#readme";
            description = "The Wallet Backend for a Cardano node";
