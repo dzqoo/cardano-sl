@@ -57,6 +57,7 @@ library
                        Pos.Merkle
 
                        Pos.System.Metrics.Constants
+                       Pos.TxInWitnessGT
 
   other-modules:
                        -- Binary
@@ -133,6 +134,7 @@ library
                      , cardano-sl-crypto-test
                      , cardano-sl-networking
                      , cardano-sl-util
+                     , cardano-crypto
                      , cborg
                      , containers
                      , cryptonite
@@ -156,6 +158,8 @@ library
                      , reflection
                      , safe-exceptions
                      , serokell-util
+                     , tasty-golden
+                     , tasty
                      , template-haskell
                      , text
                      , text-format
@@ -214,6 +218,7 @@ test-suite test
                        Spec
                        Test.Pos.Core.AddressSpec
                        Test.Pos.Core.CoinSpec
+                       Test.Pos.Core.TxInWitnessGT
 
   build-depends:       base
                      , bytestring
